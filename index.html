@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scheduler Controller</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="test" id="test"></div>
+    <div class="container" id="container">
+      <div class="components">
+        <div class="dropdown" id="trainer-select">
+          <div class="dropdown-toggle">Select a trainer</div>
+          <div class="dropdown-menu">
+            <div class="dropdown-item" data-value="trainer1">Mahmoud Ahmed</div>
+            <div class="dropdown-item" data-value="trainer2">Ali El sayed</div>
+            <div class="dropdown-item" data-value="trainer3">Ahmed hesham</div>
+          </div>
+        </div>
+
+        <div class="dropdown" id="time-select">
+          <div class="dropdown-toggle">Time</div>
+          <div class="dropdown-menu">
+            <div class="dropdown-item" data-value="9:00-9:30-am">
+              9:00 - 9:30 AM
+            </div>
+            <div class="dropdown-item" data-value="9:30-10:00-am">
+              9:30 - 10:00 AM
+            </div>
+            <div class="dropdown-item" data-value="10:00-10:30-am">
+              10:00 - 10:30 AM
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown" id="day-select">
+          <div class="dropdown-toggle">Day</div>
+          <div class="dropdown-menu">
+            <div class="dropdown-item" data-value="saturday">Saturday</div>
+            <div class="dropdown-item" data-value="sunday">Sunday</div>
+            <div class="dropdown-item" data-value="monday">Monday</div>
+          </div>
+        </div>
+
+        <div class="dropdown" id="bg-color-select">
+          <div class="dropdown-toggle">Select a color</div>
+          <div class="dropdown-menu">
+            <div class="dropdown-item" data-value="#000080">Blue</div>
+            <div class="dropdown-item" data-value="#008000">Green</div>
+            <div class="dropdown-item" data-value="#FF0000">Red</div>
+          </div>
+        </div>
+
+        <button id="save-button" class="save-button">Save</button>
+      </div>
+      <hr />
+    </div>
+    <!-- New container for the session list -->
+    <div id="session-list"></div>
+    <script type="module" src="./main.mjs"></script>
+  </body>
+</html>
